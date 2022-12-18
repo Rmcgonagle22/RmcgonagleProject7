@@ -48,7 +48,7 @@ def ClassArcade():
     win = Window.Window(500, 500)
     win.load()
     arcade.run()
-
+#this part below is not correct and I will correct it shortly
 def draw_triangle(length):
     pen.setheading(180)      # set the direction of the pen to left
     for i in range(3):       # draw 3 sides
