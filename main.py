@@ -5,29 +5,35 @@ def compound_interest(initial_balance, interest_rate,years_past):
         return 0
 
 def reverseString(string):
-    if len(string) <= 1:
-        return string
+    if len(Palindrome) <= 1:
+        return Palindrome
 
-    return string[-1] + reverseString(string[:-1])
+    return Palindrome[-1] + reverseString(string[:-1])
 
-print(Palidrome)
-print(reverseString(Palidrome))
+def loop_fact(n):
+    result = 1
+    for number in range(1,n):
+        result = result*number
+    return n*result
 
-def fib(x):
-    if(x == 1):
+def fact(n):
+    if n<=1:
         return 1
-    elif x == 0:
-        return 0
-    else:
-        return fib(x-1) + fib(x - 2)
+    return  n * fact(n-1)
 
-def fibIter(x):
-    i = 0
-    a = 0
-    b = 1
-    while i < x:
-        c = a + b
-        a = b
-        b = c
-        i += 1
-    print(b)
+def main():
+    my_n = int(input("what number shall we calculate factorial:"))
+    result = fact(my_n)
+    print(f"the result is {result}")
+
+main()
+
+def main():
+    student_data = get_data("students.txt")
+    student_data.sort(key=get_key)
+    stu_to_find = input("what student should we find")
+    result = binary_search(student_data, stu_to_find)
+    print(result)
+#    for stu in student_data:
+#        print(stu)
+
